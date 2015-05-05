@@ -1,28 +1,7 @@
-== README
+The three validations included were: uniqueness, length, and presence. These were all located in the posts page.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+We added Papertrail as a Heroku add-on.
 
-Things you may want to cover:
+For the queries, we created two queries: sorting descending by name, and displaying the most 3 recent posts Another two queries were created for a second list of posts: displaying posts with a latitude of 39.95 and hacing an offset.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+The deployment location for posts is: https://cis196-jz-hq.herokuapp.org
