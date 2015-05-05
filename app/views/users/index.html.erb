@@ -13,10 +13,14 @@
  		<td><%= user.email %></td>
  		<td><%= user.password %></td>
  		<td><%= link_to "edit user", edit_user_path(user.id) %> </td>
- 		<td><%= link_to "destroy user", user, method: :delete %> </td>
- 	</tr>
+ 		<td><%= link_to "Delete", user_path(user), :confirm => "Are you sure?", :method => :delete %></td>
+ 		<td><%= link_to "Delete User", registration_path(user), data: { confirm: "Are you sure?" }, method: :delete %> </td>
+ 	</tr>:
 
 
  	<% end %>
 
 </table>
+
+<br>
+<%= link_to 'New User', new_user_path %>
