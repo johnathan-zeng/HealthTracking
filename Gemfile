@@ -7,6 +7,7 @@ group :production do
  				gem 'pg'
  		end
 
+gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1.rc2'
 # Use sqlite3 as the database for Active Record

@@ -5,11 +5,11 @@ one:
   body: MyText
   latitude: 9.99
   longitude: 9.99
-  user_id: 
+  user_id: 1
 
 two:
-  title: MyString
-  body: MyText
-  latitude: 9.99
-  longitude: 9.99
-  user_id: 
+  title: MyString2
+  body: MyText2
+  latitude: 9.98
+  longitude: 9.98
+  user_id: 2

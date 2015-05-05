@@ -13,26 +13,6 @@ def create
 	end
 end
 
-  def index
-  	@users=User.all
-  end
-
-def edit
-@user = User.find(params[:id])
-end
-
-def destroy
-@user = User.find(params[:id])
-@user.destroy
-redirect_to users_path
-end
-
-def delete
-@user = User.find(params[:id])
-@user.destroy
-redirect_to users_path
-end
-
 def update
  @user = User.find(params[:id])
  if @user.update_attributes(user_params)
@@ -42,9 +22,26 @@ def update
  end
 end
 
+def destroy
+	@user = User.find(params[:id])
+	@user.destroy
+	redirect_to users_path
+end
+
+def index
+	@users = User.all
+end
+
+def delete
+end
+
+def edit
+	@user = User.find(params[:id])
+end
+
 def show
-@user = User.find(params[:id])
-end	
+	@user = User.find(params[:id])
+end
 
 private
 
