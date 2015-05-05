@@ -3,9 +3,11 @@
 
 <table>
 <tr>
-<td>name</td>
-<td>email</td>
-<td>password</td>
+<td>Disease</td>
+<td>Comments</td>
+<td>Latitude</td>
+<td>Longitude</td>
+<td>User</td>
 </tr>
 <% @posts.each do |post| %>
 <tr>
@@ -13,8 +15,9 @@
 	<td><%= post.body %></td>
 	<td><%= post.latitude %></td>
 	<td><%= post.longitude %></td>
-	<td><%= post.user.name %>
-</td>
+	<td><%= post.user.name %></td>
+	<td><%= link_to post.title, post_path(post) %></td>
+
 </tr>
 <% end %>
 </table>

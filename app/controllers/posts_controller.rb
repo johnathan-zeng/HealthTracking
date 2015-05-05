@@ -19,9 +19,21 @@ end
  def edit
  end
 
-  def show
-  end
+def show
+@post = Post.find(params[:id])
+end	
 
+def destroy
+@post = Post.find(params[:id])
+@post.destroy
+redirect_to posts_path
+end
+
+def delete
+@post = Post.find(params[:id])
+@post.destroy
+redirect_to posts_path
+end
 
  private
 	def post_params
